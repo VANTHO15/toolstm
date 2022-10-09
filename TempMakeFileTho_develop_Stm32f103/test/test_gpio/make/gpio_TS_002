@@ -1,0 +1,11 @@
+
+
+SRC_DIRS     = ../driver/$(MODULE)/source
+SRC_DIRS     += ../test/test_$(MODULE)/$(TEST)/test_suite/source
+SRC_DIRS     += ../test/test_$(MODULE)/$(TEST)/test_case/source
+
+INCLUDE_DIRS = ../driver/$(MODULE)/include
+INCLUDE_DIRS += ../test/test_$(MODULE)/$(TEST)/test_suite/include
+INCLUDE_DIRS += ../test/test_$(MODULE)/$(TEST)/test_case/include
+
+
