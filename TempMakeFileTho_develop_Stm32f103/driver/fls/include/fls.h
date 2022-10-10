@@ -1,5 +1,5 @@
 
-typedef enum
+typedef enum 
 {
 	FLASH_ERRORS = 0U,    /* There is a error */
 	FLASH_NO_ERRORS,      /* There is no errors */

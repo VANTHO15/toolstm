@@ -1,0 +1,112 @@
+<html>
+<head>
+    <style>
+        table, th, td {
+          border: 1px solid;
+        }
+        .bk1 {
+            background-color: #AAFFAA;
+        }
+        .bk2{
+            background-color: #FFAAAA;
+        }
+
+    </style>
+</head>
+<body>
+
+<table border="0" cellspacing="0" width="100%">
+    <colgroup>
+        <col width="15%">
+        <col width="50%">
+        <col width="25%">
+        <col width="10%">
+    </colgroup>
+    <tbody>
+        
+    <tr valign="top" class="unittests-sectionheader" align="left">
+        <th colspan="3">Name</th>
+        <th>Status</th>
+    </tr>
+    <tr class="unittests-title">
+        <td colspan="2"><h4>Test suite: CONTENT_TESTSUITE</h4></td>
+        <td colspan="1">
+            <table style="text-align:center">
+                <tbody>
+                    <td width="200" bgcolor="#AAFFAA" >OK: 1</td>
+                    <td width="200" bgcolor="#FFAAAA" >NOT_OK: 0</td>
+                    <td width="200" bgcolor="#FFFFAA" >NO_RUN : 0</td>
+                </tbody>
+            </table>
+        </td>
+        <td colspan="1" bgcolor="#AAFFAA">
+            OK
+        </td>
+    </tr>
+    
+<tr class="unittests-data bk">
+    <td>NAME_TESTCASE</td>
+    <td colspan="2">CONTENT_TESTCASE</td>
+    <td class="sta" >
+        OK
+    </td>
+</tr>
+
+    <tr>
+        <td colspan="5">
+            <div id="" class="testresults-output-div"
+                 style="display: block;"><span style="font-weight:bold">Properties:</span><br>
+                <table width="30%">
+                    <tbody>
+                    <tr>
+                        <th>Property</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td >Timestamp</td>
+                        <td id ="datetime"  ></td>
+                    </tr>
+                    <tr>
+                        <td>Compiler</td>
+                        <td>Gcc</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    
+   
+    var currentdate = new Date();
+    var datetime = currentdate.getDate() + "/" + ( currentdate.getMonth() + 1 )
+    + "/" + currentdate.getFullYear() + " - " 
+    + currentdate.getHours() + ":" 
+    + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+    document.getElementById("datetime").innerHTML = datetime;
+   
+
+    var status = "STATUS_TEST";
+    var x= document.getElementsByClassName("bk");
+    var sta= document.getElementsByClassName("sta");
+    if(status == "OK")
+    {
+        x[0].classList.add("bk1");
+        sta[0].classList.add("bk1");
+        sta[0].innerHTML = "OK";
+        
+    }
+    else
+    {
+        x[0].classList.add("bk2");
+        sta[0].classList.add("bk2");
+        sta[0].innerHTML = "NOT OK";
+    }
+
+</script>
+
+</body>
+</html>

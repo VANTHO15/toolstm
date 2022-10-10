@@ -11,6 +11,7 @@ extern uint32_t _edata;
 extern uint32_t _la_data;
 extern uint32_t _sbss;
 extern uint32_t _ebss;
+
 /****************************************************************************************
 *                           Prototypes of the startup file 
 *****************************************************************************************/
@@ -106,7 +107,7 @@ void OTG_HS_IRQHandler           	(void);
 void DCMI_IRQHandler             	(void);
 void CRYP_IRQHandler             	(void);
 void HASH_RNG_IRQHandler         	(void);
-void FPU_IRQHandler              	(void);
+void FPU_IRQHandler              	(void); 
 /****************************************************************************************
 *                           Prototypes of my application  
 *****************************************************************************************/
